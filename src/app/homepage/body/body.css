@@ -39,6 +39,10 @@
   color: #007bff;
 }
 /* styles/Services.module.css */
+/* styles/Services.module.css */
+/* styles/Services.module.css */
+/* styles/Services.module.css */
+/* styles/Services.module.css */
 .services {
   background-color: #f0f0f0; /* Match the background color of the hero section */
   padding: 80px 0;
@@ -47,40 +51,99 @@
 .services .container {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
   text-align: center;
-}
-
-.services h2 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #333; /* Text color for the section title */
-  margin-bottom: 40px;
+  gap: 30px; /* Increase spacing between elements */
 }
 
 .service-card {
   background-color: #fff; /* Background color for each service card */
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 30px; /* Increase padding for each card */
+}
+
+/* styles/Services.module.css */
+.services {
+  background-color: #f0f0f0; /* Match the background color of the hero section */
+  padding: 80px 0;
+}
+
+.services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+  gap: 30px; /* Increase spacing between elements */
+}
+
+.service-card {
+  display: flex; /* Use flexbox to align items horizontally */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px; /* Increase padding for bigger containers */
   margin-bottom: 30px;
 }
 
 .service-card img {
-  width: 80px; /* Adjust the width of service icons */
-  height: 80px; /* Adjust the height of service icons */
-  margin: 0 auto 20px;
-  display: block;
+  width: 200px; /* Adjust the width of the image */
+  height: auto; /* Let the height adjust automatically */
+  margin-right: 20px; /* Add margin to separate the image from text */
+}
+
+.service-info {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  text-align: left; /* Align text to the left */
+  flex: 1; /* Allow the text to take up remaining space */
 }
 
 .service-card h3 {
-  font-size: 20px;
+  font-size: 24px; /* Increase font size for service titles */
   font-weight: bold;
   color: #333; /* Text color for service titles */
   margin: 0 0 10px;
 }
 
 .service-card p {
-  font-size: 16px;
+  font-size: 18px; /* Increase font size for service descriptions */
   color: #666; /* Text color for service descriptions */
   margin: 0;
 }
+
+.service-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Add this CSS to your existing file */
+
+.Under {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  text-align: left; /* Align text to the left */
+  flex: 1; /* Allow the text to take up remaining space */
+}
+
+.Under h3 {
+  font-size: 24px; /* Increase font size for service titles */
+  font-weight: bold;
+  color: #333; /* Text color for service titles */
+  margin: 0 0 10px;
+}
+
+.Under p {
+  font-size: 18px; /* Increase font size for service descriptions */
+  color: #666; /* Text color for service descriptions */
+  margin: 0;
+}
+

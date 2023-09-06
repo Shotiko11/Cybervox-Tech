@@ -1,6 +1,6 @@
 import React from "react";
 import "./body.css";
-import itserviceImage from '../../../images/itservice.jpg'; 
+import "../../../../public/images/itservice.jpg";
 
 const Body = () => {
   return (
@@ -14,16 +14,19 @@ const Body = () => {
           </a>
         </div>
       </section>
+      <div></div>
       <section className="services">
         <div className="container">
           <h2>Our Services</h2>
           <div className="service-card">
-            <img src={itserviceImage} alt="IT Service" />
-
-            <h3>Service Title 1</h3>
-            <p>
-              Description of the service goes here. Lorem ipsum dolor sit amet.
-            </p>
+            <img src="/images/itservice.jpg" alt="IT Service" />
+            <div className="Under">
+              <h3>Service Title 1</h3>
+              <p>
+                Description of the service goes here. Lorem ipsum dolor sit
+                amet.
+              </p>
+            </div>
           </div>
           <div className="service-card">
             <img src="service-icon-2.png" alt="Service 2" />

@@ -1,10 +1,9 @@
-/* styles/Footer.module.css */
 .footer {
-    background-color: #f0f0f0; /* Match the header background color */
-    color: #333; /* Match the header text color */
-    padding: 40px 0; /* Increased height for the footer */
+    background-color: #f0f0f0; 
+    color: #333;
+    padding: 40px 0; 
     text-align: center;
-    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Similar box-shadow as the header, but upside-down */
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); 
   }
   
   .container {
@@ -20,9 +19,9 @@
   }
   
   .contact-info {
-    display: flex; /* Display phone number and address side by side */
-    justify-content: center; /* Center them horizontally within the footer */
-    flex-wrap: wrap; /* Allow them to wrap to the next line if the screen is narrow */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 20px;
   }
   
@@ -35,18 +34,35 @@
   }
   
   .footer-links {
-    margin-top: 20px; /* Increased space between contact info and links */
+    margin-top: 20px;
   }
   
   .footer-links a {
-    color: #333; /* Match the header text color */
     text-decoration: none;
-    margin: 10px 15px; /* Increased space between links and contact info */
-    font-size: 22px;
-    transition: color 0.3s ease;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 18px;
+    position: relative;
+    transition: color 0.6s ease;
+    font-weight: 440;
+  }
+  
+  .footer-links a::before {
+    content: ''; 
+    position: absolute;
+    width: 0; 
+    height: 2px; 
+    background-color: #007bff; 
+    left: 0; 
+    bottom: 0;
+    transition: width 0.6s ease; 
   }
   
   .footer-links a:hover {
-    color: #007bff; /* Change to blue on hover, matching the header's hover color */
+    color: #007bff; 
+  }
+  
+  .footer-links a:hover::before {
+    width: 100%; 
   }
   

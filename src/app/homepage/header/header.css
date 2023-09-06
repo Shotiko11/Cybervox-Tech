@@ -1,51 +1,109 @@
+/* styles/Header.module.css */
 .header {
-    background-color: #f0f0f0;
-    padding: 20px 0;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-  
-  .companyName {
-    font-size: 30px;
-    font-weight: bold;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .menu {
-    list-style-type: none;
-    display: flex;
-    gap: 40px;
-    padding-left: 0;
-  }
-  
-  .menu li {
-    margin: 0;
-  }
-  
-  .menu li a {
-    text-decoration: none;
-    color: #333; 
-    font-weight: 600;
-    padding: 10px 20px;
-    font-size: 18px;
-    transition: color 0.6s ease;
-    font-size: 22px; 
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  height: 80px; /* Add a fixed height to the header */
+  transition: 0.5s ease;
 }
-  
-  .menu li a:hover {
-    color: #007bff; 
-  }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.companyName {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  padding-left: 0;
+}
+
+.menu li {
+  margin: 0;
+}
+
+/* styles/Header.module.css */
+.header {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  height: 80px; /* Add a fixed height to the header */
+  transition: 0.5s ease;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.companyName {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  padding-left: 0;
+}
+
+/* styles/Header.module.css */
+.menu li a {
+  text-decoration: none;
+  color: #333; 
+  font-weight: 440;
+  padding: 10px 20px;
+  font-size: 18px;
+  position: relative; /* Add relative positioning to create ::before pseudo-element */
+  transition: color 0.6s ease; /* Remove font-size transition */
+}
+
+.menu li a::before {
+  content: ''; /* Add an empty content for pseudo-element */
+  position: absolute;
+  width: 0; /* Start with no width (no underline) */
+  height: 2px; /* Set the height of the underline */
+  background-color: #007bff; /* Color of the underline */
+  left: 0; /* Start from the left */
+  bottom: 0;
+  transition: width 0.6s ease; /* Transition for the underline width */
+}
+
+.menu li a:hover {
+  color: #007bff; 
+}
+
+.menu li a:hover::before {
+  width: 100%; /* Expand the underline from left to right on hover */
+}
+
+

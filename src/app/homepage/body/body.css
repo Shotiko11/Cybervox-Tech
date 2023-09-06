@@ -1,0 +1,86 @@
+/* styles/Hero.module.css */
+.hero {
+  background-color: #f0f0f0; /* Match the background color of header and footer */
+  color: #333; /* Match the text color of header and footer */
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #f0f0f0; /* Match the background color of header and footer */
+  color: #007bff; /* Match the link color in the header and footer */
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d4d4d4; /* Adjust the background color on hover if desired */
+  color: #007bff;
+}
+/* styles/Services.module.css */
+.services {
+  background-color: #f0f0f0; /* Match the background color of the hero section */
+  padding: 80px 0;
+}
+
+.services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333; /* Text color for the section title */
+  margin-bottom: 40px;
+}
+
+.service-card {
+  background-color: #fff; /* Background color for each service card */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.service-card img {
+  width: 80px; /* Adjust the width of service icons */
+  height: 80px; /* Adjust the height of service icons */
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* Text color for service titles */
+  margin: 0 0 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #666; /* Text color for service descriptions */
+  margin: 0;
+}

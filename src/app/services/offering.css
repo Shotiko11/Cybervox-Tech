@@ -13,6 +13,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+    padding: 30px 0;
 }
 
 .service {
@@ -42,4 +43,8 @@ body {
     text-align: center;
     text-decoration: none; /* Remove any default underline */
     transition: color 0.5s ease;
+}
+
+.mainelement {
+    padding: 10px 0;
 }

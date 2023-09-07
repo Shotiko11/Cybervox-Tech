@@ -1,9 +1,9 @@
 /* styles/Hero.module.css */
 .hero {
-  background-color: #f0f0f0; /* Match the background color of header and footer */
-  color: #333; /* Match the text color of header and footer */
+  background-color: #f0f0f0; /* Match the background color of other sections */
+  color: #333; /* Match the text color of other sections */
   text-align: center;
-  padding: 100px 0;
+  padding: 40px 0 50px 0;
 }
 
 .hero-content {
@@ -12,32 +12,38 @@
 }
 
 .hero h1 {
-  font-size: 36px;
+  font-size: 45px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #007bff; /* A shade close to the blue color in other sections */
 }
 
 .hero p {
   font-size: 18px;
-  margin-bottom: 30px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #666; /* A shade close to the grey color in other sections */
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #f0f0f0; /* Match the background color of header and footer */
-  color: #007bff; /* Match the link color in the header and footer */
-  padding: 10px 20px;
-  font-size: 18px;
+  background-color: #f0f0f0; /* Match the background color of other sections */
+  color: #007bff; /* A shade close to the blue color in other sections */
+  padding: 15px 30px;
+  font-size: 20px;
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .cta-button:hover {
-  background-color: #d4d4d4; /* Adjust the background color on hover if desired */
+  background-color: #d4d4d4; /* A slightly darker shade of grey */
   color: #007bff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 /* styles/Services.module.css */
 /* styles/Services.module.css */
 /* styles/Services.module.css */
@@ -56,6 +62,7 @@
   align-items: center; /* Center items horizontally */
   text-align: center;
   gap: 30px; /* Increase spacing between elements */
+  padding: 40px 0;
 }
 
 .service-card {
@@ -68,7 +75,7 @@
 /* styles/Services.module.css */
 .services {
   background-color: #f0f0f0; /* Match the background color of the hero section */
-  padding: 80px 0;
+  padding: 0;
 }
 
 .services .container {
@@ -88,6 +95,8 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 40px; /* Increase padding for bigger containers */
   margin-bottom: 30px;
+  max-width: 780px;
+  max-height: 120px;
 }
 
 .service-card img {
@@ -95,6 +104,14 @@
   height: auto; /* Let the height adjust automatically */
   margin-right: 20px; /* Add margin to separate the image from text */
   border-radius: 10%;
+  max-height: 135px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add smooth hover effects */
+}
+
+.service-card img:hover {
+  transform: scale(1.1); /* Slightly scale up the image on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+  cursor: pointer;
 }
 
 .service-info {
@@ -103,19 +120,6 @@
   justify-content: center; /* Center items vertically */
   text-align: left; /* Align text to the left */
   flex: 1; /* Allow the text to take up remaining space */
-}
-
-.service-card h3 {
-  font-size: 24px; /* Increase font size for service titles */
-  font-weight: bold;
-  color: #333; /* Text color for service titles */
-  margin: 0 0 10px;
-}
-
-.service-card p {
-  font-size: 18px; /* Increase font size for service descriptions */
-  color: #666; /* Text color for service descriptions */
-  margin: 0;
 }
 
 .service-info {
@@ -136,15 +140,32 @@
 }
 
 .Under h3 {
-  font-size: 24px; /* Increase font size for service titles */
+  font-size: 30px;
   font-weight: bold;
-  color: #333; /* Text color for service titles */
+  color: #333;
   margin: 0 0 10px;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add smooth hover effects */
+  padding: 0 0 5px 0;
 }
 
 .Under p {
-  font-size: 18px; /* Increase font size for service descriptions */
-  color: #666; /* Text color for service descriptions */
+  font-size: 18px;
+  color: #666;
   margin: 0;
+  padding: 10px;
+  border: 2px solid #ccc; /* Use a slightly darker grey border color */
+  border-radius: 20px; /* Increase the border radius for a more rounded look */
+  background-color: #f7f7f7; /* A slightly lighter grey background color */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  transition: transform 0.2s, box-shadow 0.2s; /* Add smooth hover effects */
 }
 
+.Under h3:hover {
+  transform: scale(1.13);
+}
+
+.Under p:hover {
+  transform: scale(1.05); /* Slightly scale up only the paragraph on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+  cursor: pointer;
+}

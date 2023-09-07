@@ -1,6 +1,5 @@
 import React from "react";
 import "./body.css";
-import "../../../../public/images/itservice.jpg";
 
 const Body = () => {
   return (
@@ -18,28 +17,32 @@ const Body = () => {
         <div className="container">
           <h2>What we offer to your company</h2>
           <div className="service-card">
-            <img src="/images/itservice.jpg" alt="IT Service" />
+            <img src="/images/itsupport.jpg" alt="IT Service"/>
             <div className="Under">
-              <h3>Service Title 1</h3>
+              <h3>IT Service</h3>
               <p>
-                Description of the service goes here. Lorem ipsum dolor sit
-                amet.
+              Experience seamless operations with our expert IT support. Fast, reliable, and tailored solutions to keep your systems running smoothly, so you can focus on your core business.
               </p>
             </div>
           </div>
           <div className="service-card">
-            <img src="service-icon-2.png" alt="Service 2" />
-            <h3>Service Title 2</h3>
-            <p>
-              Description of the service goes here. Lorem ipsum dolor sit amet.
-            </p>
+            <img src="/images/softwareservice.png" alt="Service 2" />
+            <div className="Under">
+              <h3>Software Service</h3>
+
+              <p>
+                Embrace innovation with out comprehensive software services. From development to implementation, we provide cutting-edge solutions to optimize your business process.
+              </p>
+            </div>
           </div>
           <div className="service-card">
-            <img src="service-icon-3.png" alt="Service 3" />
-            <h3>Service Title 3</h3>
-            <p>
-              Description of the service goes here. Lorem ipsum dolor sit amet.
-            </p>
+            <img src="/images/designservice.png" alt="Service 3" />
+            <div className="Under">
+              <h3>3D Designing</h3>
+              <p>
+                Unleash creativity without limits through our 3D design expertise. Bring your ideas to life with precision and imagination. Elevate yiur visual content ...
+              </p>
+            </div>
           </div>
         </div>
       </section>

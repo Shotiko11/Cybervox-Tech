@@ -1,7 +1,6 @@
-/* styles/Hero.module.css */
 .hero {
-  background-color: #f0f0f0; /* Match the background color of other sections */
-  color: #333; /* Match the text color of other sections */
+  background-color: #f0f0f0;
+  color: #333;
   text-align: center;
   padding: 40px 0 50px 0;
 }
@@ -15,20 +14,20 @@
   font-size: 45px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #007bff; /* A shade close to the blue color in other sections */
+  color: #007bff;
 }
 
 .hero p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
-  color: #666; /* A shade close to the grey color in other sections */
+  color: #666;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #f0f0f0; /* Match the background color of other sections */
-  color: #007bff; /* A shade close to the blue color in other sections */
+  background-color: #f0f0f0;
+  color: #007bff;
   padding: 15px 30px;
   font-size: 20px;
   font-weight: bold;
@@ -38,19 +37,14 @@
 }
 
 .cta-button:hover {
-  background-color: #d4d4d4; /* A slightly darker shade of grey */
+  background-color: #d4d4d4;
   color: #007bff;
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* styles/Services.module.css */
-/* styles/Services.module.css */
-/* styles/Services.module.css */
-/* styles/Services.module.css */
-/* styles/Services.module.css */
 .services {
-  background-color: #f0f0f0; /* Match the background color of the hero section */
+  background-color: #f0f0f0;
   padding: 80px 0;
 }
 
@@ -58,85 +52,57 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  gap: 30px; /* Increase spacing between elements */
+  gap: 30px;
   padding: 40px 0;
 }
 
 .service-card {
-  background-color: #fff; /* Background color for each service card */
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px; /* Increase padding for each card */
-}
-
-/* styles/Services.module.css */
-.services {
-  background-color: #f0f0f0; /* Match the background color of the hero section */
-  padding: 0;
-}
-
-.services .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  text-align: center;
-  gap: 30px; /* Increase spacing between elements */
-}
-
-.service-card {
-  display: flex; /* Use flexbox to align items horizontally */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  padding: 40px; /* Increase padding for bigger containers */
+  padding: 30px;
+}
+
+.services .container {
+  background-color: #f0f0f0;
+  padding: 0;
+}
+
+.service-card {
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
   margin-bottom: 30px;
   max-width: 780px;
   max-height: 120px;
 }
 
 .service-card img {
-  width: 200px; /* Adjust the width of the image */
-  height: auto; /* Let the height adjust automatically */
-  margin-right: 20px; /* Add margin to separate the image from text */
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
   border-radius: 10%;
   max-height: 135px;
-  transition: transform 0.2s, box-shadow 0.2s; /* Add smooth hover effects */
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .service-card img:hover {
-  transform: scale(1.1); /* Slightly scale up the image on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+  transform: scale(1.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
-.service-info {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center items vertically */
-  text-align: left; /* Align text to the left */
-  flex: 1; /* Allow the text to take up remaining space */
-}
-
-.service-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Add this CSS to your existing file */
-
 .Under {
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: flex-start; /* Align items to the left */
-  text-align: left; /* Align text to the left */
-  flex: 1; /* Allow the text to take up remaining space */
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  flex: 1;
 }
 
 .Under h3 {
@@ -144,7 +110,7 @@
   font-weight: bold;
   color: #333;
   margin: 0 0 10px;
-  transition: transform 0.2s, box-shadow 0.2s; /* Add smooth hover effects */
+  transition: transform 0.2s, box-shadow 0.2s;
   padding: 0 0 5px 0;
 }
 
@@ -153,11 +119,11 @@
   color: #666;
   margin: 0;
   padding: 10px;
-  border: 2px solid #ccc; /* Use a slightly darker grey border color */
-  border-radius: 20px; /* Increase the border radius for a more rounded look */
-  background-color: #f7f7f7; /* A slightly lighter grey background color */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-  transition: transform 0.2s, box-shadow 0.2s; /* Add smooth hover effects */
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .Under h3:hover {
@@ -165,7 +131,7 @@
 }
 
 .Under p:hover {
-  transform: scale(1.05); /* Slightly scale up only the paragraph on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Enhance the shadow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }

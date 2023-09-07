@@ -1,5 +1,8 @@
 import React from "react";
 import "./header.css";
+import Link from "next/link";
+
+
 const Header = () => {
   return (
     <div>
@@ -8,17 +11,17 @@ const Header = () => {
           <div className="companyName">Cybervox Tech</div>
           <ul className="menu">
             <li>
-              <a className="liclass" href="#">
+              <a className="liclass" href="/">
                 Home
               </a>
             </li>
             <li>
-              <a className="liclass" href="#">
+              <Link className="liclass" href="/Services">
                 services
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="liclass" href="#">
+              <a className="liclass" href="/AboutUs">
                 About Us
               </a>
             </li>

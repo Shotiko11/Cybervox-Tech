@@ -9,7 +9,6 @@ const Services = () => {
     <div>
       <Header />
       <Offering />
-      <div></div>
     </div>
   )
 }

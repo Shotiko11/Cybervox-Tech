@@ -16,7 +16,7 @@ const Body = () => {
       </section>
       <section className="services">
         <div className="container">
-          <h2>Our Services</h2>
+          <h2>What we offer to your company</h2>
           <div className="service-card">
             <img src="/images/itservice.jpg" alt="IT Service" />
             <div className="Under">

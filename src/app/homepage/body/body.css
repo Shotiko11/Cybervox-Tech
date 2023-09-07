@@ -94,6 +94,7 @@
   width: 200px; /* Adjust the width of the image */
   height: auto; /* Let the height adjust automatically */
   margin-right: 20px; /* Add margin to separate the image from text */
+  border-radius: 10%;
 }
 
 .service-info {

@@ -14,7 +14,6 @@ const Body = () => {
           </a>
         </div>
       </section>
-      <div></div>
       <section className="services">
         <div className="container">
           <h2>Our Services</h2>

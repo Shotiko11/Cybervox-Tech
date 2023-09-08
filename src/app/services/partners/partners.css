@@ -3,6 +3,9 @@
     padding: 40px;
     display: flex;
     align-items: center;
+    width: 95%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 100%;
   }
   
   .partnerContainertwo {

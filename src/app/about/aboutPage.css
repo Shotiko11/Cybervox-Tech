@@ -21,6 +21,10 @@
   margin-bottom: 20px;
 }
 
+.section-heading.center-team {
+  text-align: center;
+}
+
 /* Company description styles */
 .company-description {
   font-size: 18px;
@@ -50,14 +54,23 @@
 }
 
 /* Individual team member card styles */
+/* Individual team member card styles */
 .team-member {
-  width: 300px;
+  flex: 1;
+  max-width: calc(25% - 20px); /* 25% width with a small gap between */
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
+  margin-right: 20px; /* Add a small gap between team members */
 }
+
+/* Adjust margin-right for the last team member in each row */
+.team-member:nth-child(4n) {
+  margin-right: 0;
+}
+
 
 /* Team member photo styles */
 .team-member-photo {

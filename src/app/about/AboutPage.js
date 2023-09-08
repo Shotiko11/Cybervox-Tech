@@ -6,7 +6,7 @@ const AboutPage = () => {
   return (
     <div className="about-section">
       <div className="about-container">
-        <h2 className="section-heading">Company Overview</h2>
+        <h2 className="section-heading center-team">Company Overview</h2>
         <p className="company-description">
           Welcome to Cybervox Tech, your trusted partner in the world of
           technology and innovation. Founded in 2023, {"we've"} been on a
@@ -21,7 +21,7 @@ const AboutPage = () => {
       </div>
       <div className="history-side">
         <div className="about-container">
-          <h2 className="section-heading">Our History</h2>
+          <h2 className="section-heading center-team">Our History</h2>
           <p className="company-description">
             Since our inception in 2023, {"we've"} been dedicated to innovation
             and excellence. Over the years, {"we've"} achieved numerous
@@ -36,7 +36,7 @@ const AboutPage = () => {
       </div>
       <div className="team-section">
         <div className="about-container">
-          <h2 className="section-heading">Introduce Our Team</h2>
+          <h2 className="section-heading center-team">Introduce Our Team</h2>
           <div className="team-members">
             {/* Team Member 1 */}
             <div className="team-member">

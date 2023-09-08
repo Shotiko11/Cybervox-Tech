@@ -36,15 +36,12 @@ const Offering = () => {
         <h1>Diverse Range of Professional Services</h1>
       </div>
       <div className="container">
-
         {services.map((services, index) => (
           <div key={index} className="service"> 
             <h3>{services.h3}  <Image src={services.logo} alt={services.name} width={29} height={29}/></h3>
             <p>{services.p}</p>
-
           </div>
         ))}
-
       </div>
     </div>
   );

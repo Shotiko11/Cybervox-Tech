@@ -129,6 +129,7 @@
 
 .Under h3:hover {
   transform: scale(1.13);
+  cursor: pointer;
 }
 
 .Under p:hover {

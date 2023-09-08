@@ -1,5 +1,6 @@
 import React from "react";
 import "./body.css";
+import Image from "next/image";
 
 const Body = () => {
   return (
@@ -38,7 +39,7 @@ const Body = () => {
           <div className="service-card">
             <img src="/images/designservice.png" alt="Service 3" />
             <div className="Under">
-              <h3>3D Designing</h3>
+              <h3>3D Design Service</h3>
               <p>
                 Unleash creativity without limits through our 3D design expertise. Bring your ideas to life with precision and imagination. Elevate yiur visual content ...
               </p>

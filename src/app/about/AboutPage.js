@@ -40,8 +40,8 @@ const AboutPage = () => {
           <div className="team-members">
             {/* Team Member 1 */}
             <div className="team-member">
-              <iImage
-                src="/images/personone.jpg"
+              <Image
+                src="/images/personfour.jpg"
                 alt="Lasha"
                 className="team-member-photo"
                 width={200}
@@ -75,7 +75,7 @@ const AboutPage = () => {
             {/* Team Member 3 */}
             <div className="team-member">
               <Image
-                src="/images/personone.jpg"
+                src="/images/personfour.jpg"
                 alt="Ani"
                 className="team-member-photo"
                 width={200}

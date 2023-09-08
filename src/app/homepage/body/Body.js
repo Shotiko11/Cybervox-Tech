@@ -19,7 +19,7 @@ const Body = () => {
           <div className="service-card">
             <img src="/images/itsupport.jpg" alt="IT Service"/>
             <div className="Under">
-              <h3>IT Service</h3>
+              <h3>IT Service </h3>
               <p>
               Experience seamless operations with our expert IT support. Fast, reliable, and tailored solutions to keep your systems running smoothly, so you can focus on your core business.
               </p>

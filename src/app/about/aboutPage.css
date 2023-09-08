@@ -1,0 +1,30 @@
+.about-section {
+    background-color: #f0f0f0;
+    padding: 110px 0 0 0;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .section-heading {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .company-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .history-side {
+    padding: 0 0 0 0;
+  }

@@ -1,7 +1,7 @@
 import Header from '@/app/homepage/header/Header'
 import React from 'react'
 import "../app/homepage/header/header.css";
-import Offering from '@/app/services/Offering';
+import Offering from '@/app/services/servicesoffering/Offering';
 
 
 const Services = () => {

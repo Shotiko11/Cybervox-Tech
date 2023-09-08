@@ -10,9 +10,9 @@ const Header = () => {
           <div className="companyName">Cybervox Tech</div>
           <ul className="menu">
             <li>
-              <a className="liclass" href="/">
+              <Link className="liclass" href="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <Link className="liclass" href="/Services">
@@ -20,19 +20,18 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <a className="liclass" href="/AboutUs">
+              <Link className="liclass" href="/AboutUs">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="liclass" href="#">
+              <Link className="liclass" href="#">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
       </header>
-      <h1>Hello</h1>
     </div>
   );
 };

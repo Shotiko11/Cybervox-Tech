@@ -31,6 +31,11 @@ const Header = () => {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link className="liclass" href="/MyDog">
+                My Dog
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

@@ -1,30 +1,83 @@
-.about-section {
-    background-color: #f0f0f0;
-    padding: 110px 0 0 0;
-  }
-  
-  .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 40px;
-  }
-  
-  .section-heading {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .company-description {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #666;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+/* aboutPage.css */
 
-  .history-side {
-    padding: 0 0 0 0;
-  }
+/* Styles for the entire About Page */
+.about-section {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+}
+
+/* Container styles for the content sections */
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Section heading styles */
+.section-heading {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Company description styles */
+.company-description {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Team section styles */
+.team-section {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+/* Team members container styles */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual team member card styles */
+.team-member {
+  width: 300px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Team member photo styles */
+.team-member-photo {
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  object-fit: cover;
+}
+
+/* Team member name styles */
+.team-member-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Team member title styles */
+.team-member-title {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Team member description styles */
+.team-member-description {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}

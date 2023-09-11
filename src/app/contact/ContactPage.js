@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contactPage.css";
 
 const ContactPage = () => {
+  const [text, setText] = useState(false);
+  const [message, setMessage] = useState("");
+  const [showEmptyMessage, setShowEmptyMessage] = useState(false);
+
+  const handleClick = () => {
+    if (message.trim() === "") {
+      setShowEmptyMessage(true);
+    } else {
+      setText(true);
+      setShowEmptyMessage(false); // Reset the empty message flag
+      setTimeout(() => {
+        setText(false);
+      }, 5000);
+    }
+  };
+
   return (
     <div className="contact-section">
       <div className="contact-container">
@@ -25,13 +41,29 @@ const ContactPage = () => {
         <div className="contact-form">
           {/* Include your contact form component here */}
           {/* Sample form fields */}
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Your Email" />
+          <input
+            type="text"
+            placeholder="Your Name"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+          />
           <textarea
             placeholder="Your Message"
             className="yourmessage"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          <button>Send Message</button>
+          <button onClick={() => handleClick()}>Send Message</button>
+          {showEmptyMessage && (
+            <p style={{ color: "red" }}>Your message must not be empty</p>
+          )}
+          {text && (
+            <p style={{ color: "green" }}>
+              Your form has been sent Successfully!!!
+            </p>
+          )}
         </div>
         <div className="location-map">
           {/* Embed your location map here */}

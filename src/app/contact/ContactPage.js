@@ -53,7 +53,7 @@ const ContactPage = () => {
           <p>Sunday: Closed</p>
         </div>
         <div className="social-media">
-          <h1 className="social-media-title">Our Social Media</h1>
+          <h1 className="social-media-title">Our Social Medias</h1>
           <a href="#" className="social-media-link">
             Facebook
           </a>

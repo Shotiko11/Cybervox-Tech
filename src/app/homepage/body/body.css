@@ -69,7 +69,7 @@
 
 .services .container {
   background-color: #f0f0f0;
-  padding: 0;
+  padding: 0 0 70px 0;  
 }
 
 .service-card {

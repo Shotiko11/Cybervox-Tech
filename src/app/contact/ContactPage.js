@@ -1,20 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./contactPage.css";
 
 const ContactPage = () => {
   const [text, setText] = useState(false);
   const [message, setMessage] = useState("");
   const [showEmptyMessage, setShowEmptyMessage] = useState(false);
+  const [countdown, setCountdown] = useState(5);
+
+  useEffect(() => {
+    let timer;
+    if (countdown > 0 && text) {
+      timer = setInterval(() => {
+        setCountdown((prevCountdown) => prevCountdown - 1);
+      }, 1000);
+    } else if (countdown === 0) {
+      clearInterval(timer);
+      setCountdown(5);
+      setText(false);
+    }
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, [countdown, text]);
 
   const handleClick = () => {
     if (message.trim() === "") {
       setShowEmptyMessage(true);
     } else {
       setText(true);
-      setShowEmptyMessage(false); // Reset the empty message flag
-      setTimeout(() => {
-        setText(false);
-      }, 5000);
+      setShowEmptyMessage(false);
+      setCountdown(5);
     }
   };
 
@@ -41,14 +57,8 @@ const ContactPage = () => {
         <div className="contact-form">
           {/* Include your contact form component here */}
           {/* Sample form fields */}
-          <input
-            type="text"
-            placeholder="Your Name"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-          />
+          <input type="text" placeholder="Your Name" />
+          <input type="email" placeholder="Your Email" />
           <textarea
             placeholder="Your Message"
             className="yourmessage"
@@ -57,11 +67,11 @@ const ContactPage = () => {
           ></textarea>
           <button onClick={() => handleClick()}>Send Message</button>
           {showEmptyMessage && (
-            <p style={{ color: "red" }}>Your message must not be empty</p>
+            <p style={{ color: "red" }}>Your message must not be empty </p>
           )}
           {text && (
             <p style={{ color: "green" }}>
-              Your form has been sent Successfully!!!
+              Your form has been sent Successfully!!! {countdown - 1}
             </p>
           )}
         </div>

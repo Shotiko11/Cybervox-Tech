@@ -17,7 +17,7 @@ const ContactPage = () => {
           {/* Sample form fields */}
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
-          <textarea placeholder="Your Message"></textarea>
+          <textarea placeholder="Your Message" className="yourmessage"></textarea>
           <button>Send Message</button>
         </div>
         <div className="location-map">

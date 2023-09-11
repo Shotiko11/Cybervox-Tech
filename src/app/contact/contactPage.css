@@ -52,6 +52,7 @@
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   text-align: left;
+  overflow: hidden;
 }
 
 .contact-form label {
@@ -195,4 +196,11 @@
 
 .social-media a:hover::before {
   width: 100%;
+}
+
+.yourmessage {
+  max-width: 710px;
+  max-height: 180px;
+  min-width: 269px;
+  min-height: 72px;
 }

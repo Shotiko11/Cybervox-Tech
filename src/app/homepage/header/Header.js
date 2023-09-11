@@ -31,11 +31,6 @@ const Header = () => {
                 Contact
               </Link>
             </li>
-            <li>
-              <Link className="liclass" href="/ChartPage">
-                For Chart
-              </Link>
-            </li>
           </ul>
         </nav>
       </header>

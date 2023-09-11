@@ -173,6 +173,7 @@
   text-decoration: none;
   transition: color 0.7s ease, border-bottom 0.3s ease; /* Add transition for border-bottom */
   position: relative; /* Add relative positioning to create the underline effect */
+  margin-left: 60px;
 }
 
 .location-overlay {
@@ -232,4 +233,8 @@
   max-height: 180px;
   min-width: 269px;
   min-height: 72px;
+}
+
+.sociallinks {
+  padding: 15px 0 10px 0;
 }

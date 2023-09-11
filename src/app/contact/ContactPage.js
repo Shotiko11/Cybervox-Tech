@@ -9,7 +9,9 @@ const ContactPage = () => {
         <div className="contact-info">
           <div className="contact-item">
             <p className="contact-label">Address:</p>
-            <p className="contact-value">1234 Elm Street, Cityville, ST 12345</p>
+            <p className="contact-value">
+              1234 Elm Street, Cityville, ST 12345
+            </p>
           </div>
           <div className="contact-item">
             <p className="contact-label">Phone:</p>
@@ -54,18 +56,20 @@ const ContactPage = () => {
         </div>
         <div className="social-media">
           <h1 className="social-media-title">Our Social Medias</h1>
-          <a href="#" className="social-media-link">
-            Facebook
-          </a>
-          <a href="#" className="social-media-link">
-            Twitter
-          </a>
-          <a href="#" className="social-media-link">
-            LinkedIn
-          </a>
-          <a href="#" className="social-media-link">
-            Instagram
-          </a>
+          <div className="sociallinks">
+            <a href="#" className="social-media-link">
+              Facebook
+            </a>
+            <a href="#" className="social-media-link">
+              Twitter
+            </a>
+            <a href="#" className="social-media-link">
+              LinkedIn
+            </a>
+            <a href="#" className="social-media-link">
+              Instagram
+            </a>
+          </div>
         </div>
       </div>
     </div>

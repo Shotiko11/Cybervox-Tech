@@ -32,8 +32,8 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="liclass" href="/MyDog">
-                My Dog
+              <Link className="liclass" href="/ChartPage">
+                For Chart
               </Link>
             </li>
           </ul>

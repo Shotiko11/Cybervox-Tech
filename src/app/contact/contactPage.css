@@ -25,7 +25,7 @@
 .contact-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px 0 0 0;
 }
 
 /* Section heading styles */
@@ -37,10 +37,31 @@
 }
 
 /* Contact info styles */
+/* CSS for Contact Info */
 .contact-info {
-  font-size: 20px;
-  color: #555;
-  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Style for the Contact Info Items */
+.contact-item {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for the Phone Icon */
+.contact-item .fa-phone {
+  margin-right: 10px;
+  color: #007bff; /* Blue color for phone icon */
+}
+
+/* Style for the Email Icon */
+.contact-item .fa-envelope {
+  margin-right: 10px;
+  color: #007bff; /* Blue color for email icon */
 }
 
 /* Contact form styles */
@@ -177,6 +198,14 @@
 
 .location-map:hover .location-overlay {
   opacity: 1; /* Show overlay on hover */
+}
+
+.social-media-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 0 0 10px 0;
 }
 
 .social-media a::before {

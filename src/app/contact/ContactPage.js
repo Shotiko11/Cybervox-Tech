@@ -7,12 +7,22 @@ const ContactPage = () => {
       <div className="contact-container">
         <h2 className="section-heading">Contact Us</h2>
         <div className="contact-info">
-          <p className="contact-address">1234 Elm Street</p>
-          <p className="contact-address">Cityville, ST 12345</p>
-          <p className="contact-phone">Phone: (555) 123-4567</p>
-          <p className="contact-email">Email: info@example.com</p>
+          <div className="contact-item">
+            <p className="contact-label">Address:</p>
+            <p className="contact-value">1234 Elm Street, Cityville, ST 12345</p>
+          </div>
+          <div className="contact-item">
+            <p className="contact-label">Phone:</p>
+            <p className="contact-value">(555) 123-4567</p>
+          </div>
+          <div className="contact-item">
+            <p className="contact-label">Email:</p>
+            <p className="contact-value">info@example.com</p>
+          </div>
         </div>
         <div className="contact-form">
+          {/* Include your contact form component here */}
+          {/* Sample form fields */}
           <input type="text" placeholder="Your Name" />
           <input type="email" placeholder="Your Email" />
           <textarea
@@ -22,6 +32,8 @@ const ContactPage = () => {
           <button>Send Message</button>
         </div>
         <div className="location-map">
+          {/* Embed your location map here */}
+          {/* Sample map */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11250.861635055342!2d-74.00594184337008!3d40.71277602561734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE5JzA4LjAiTiA3NMKwNTAnMDIuNiJX!5e0!3m2!1sen!2sus!4v1601671792154!5m2!1sen!2sus"
             width="100%"

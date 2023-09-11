@@ -9,7 +9,7 @@ const Header = () => {
     <div>
       <header className="header">
         <nav className="nav">
-          <div className="companyName">Cybervox Tech</div>
+          <div className="companyName" href="/">Cybervox Tech</div>
           <ul className="menu">
             <li>
               <Link className="liclass" href="/">
@@ -27,7 +27,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="liclass" href="#">
+              <Link className="liclass" href="/Contact">
                 Contact
               </Link>
             </li>

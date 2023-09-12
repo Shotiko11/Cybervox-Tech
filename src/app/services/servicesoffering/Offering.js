@@ -11,19 +11,19 @@ const Offering = () => {
       name: "Partner 2", logo: "/images/programmer.png", h3: "Programming Service", p: "Our expert programmers can develop custom software solutions tailored to your needs.",
     },
     {
-      name: "Partner 2", logo: "/images/paint.png", h3: "Designing Service", p: "We create stunning designs for websites, apps, and more to enhance your brand.",
+      name: "Partner 3", logo: "/images/paint.png", h3: "Designing Service", p: "We create stunning designs for websites, apps, and more to enhance your brand.",
     },
     {
-      name: "Partner 2", logo: "/images/cloudone.png", h3: "Cloud Computing", p: "Access scalable and secure cloud infrastructure for your data and applications.",
+      name: "Partner 4", logo: "/images/cloudone.png", h3: "Cloud Computing", p: "Access scalable and secure cloud infrastructure for your data and applications.",
     },
     {
-      name: "Partner 2", logo: "/images/data.png", h3: "Data Analytics", p: "Gain insights from your data with our advanced analytics and reporting solutions.",
+      name: "Partner 5", logo: "/images/data.png", h3: "Data Analytics", p: "Gain insights from your data with our advanced analytics and reporting solutions.",
     },
     {
-      name: "Partner 2", logo: "/images/lock.png", h3: "Cybersecurity", p: "Protect your digital assets with our robust cybersecurity services and solutions.",
+      name: "Partner 6", logo: "/images/lock.png", h3: "Cybersecurity", p: "Protect your digital assets with our robust cybersecurity services and solutions.",
     },
     {
-      name: "Partner 2", logo: "/images/mobile.png", h3: "Mobile App Development", p: "Create engaging and user-friendly mobile apps for various platforms.",
+      name: "Partner 7", logo: "/images/mobile.png", h3: "Mobile App Development", p: "Create engaging and user-friendly mobile apps for various platforms.",
     },
     {
       name: "Partner 2", logo: "/images/ai.png", h3: "AI and Machine Learning", p: "Harness the power of artificial intelligence and machine learning for your business.",

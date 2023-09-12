@@ -9,6 +9,7 @@ function Partners() {
     { name: 'Partner 2', logo: '/images/facebook.webp' },
     { name: 'Partner 2', logo: '/images/twitter.png' },
     { name: 'Partner 2', logo: '/images/blackrock.png' },
+    { name: 'Partner 2', logo: '/images/scandiwebone.png' },
   ];
 
   return (

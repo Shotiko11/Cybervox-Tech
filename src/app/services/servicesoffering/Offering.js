@@ -38,7 +38,7 @@ const Offering = () => {
       <div className="container">
         {services.map((services, index) => (
           <div key={index} className="service"> 
-            <h3>{services.h3}  <Image src={services.logo} alt={services.name} width={29} height={29}/></h3>
+            <h3>{services.h3}  <Image src={services.logo} alt={services.name} width={25} height={25}/></h3>
             <p>{services.p}</p>
           </div>
         ))}

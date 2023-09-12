@@ -6,10 +6,11 @@ function Partners() {
   const partnersData = [
     { name: 'Partner 1', logo: '/images/microsoft.png' },
     { name: 'Partner 2', logo: '/images/apple.svg' },
-    { name: 'Partner 2', logo: '/images/facebook.webp' },
-    { name: 'Partner 2', logo: '/images/twitter.png' },
-    { name: 'Partner 2', logo: '/images/blackrock.png' },
-    { name: 'Partner 2', logo: '/images/scandiwebone.png' },
+    { name: 'Partner 3', logo: '/images/facebook.webp' },
+    { name: 'Partner 4', logo: '/images/twitter.png' },
+    { name: 'Partner 5', logo: '/images/blackrock.png' },
+    { name: 'Partner 6', logo: '/images/insta.webp' },
+    { name: 'Partner 7', logo: '/images/rockS.webp' },
   ];
 
   return (

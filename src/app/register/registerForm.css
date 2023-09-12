@@ -74,3 +74,14 @@ body {
     content: "Already have an account? ";
     color: #333; /* Dark gray text */
   }
+
+  .login {
+    color: #007bff; /* Main blue color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 20px;
+  }
+  
+  .login:hover {
+    color: #0056b3;
+  }

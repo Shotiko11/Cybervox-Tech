@@ -91,3 +91,14 @@ input::placeholder {
   content: "Don't have an account? ";
   color: #333; /* Dark gray text */
 }
+
+.register {
+  color: #007bff; /* Main blue color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 20px;
+}
+
+.register:hover {
+  color: #0056b3;
+}

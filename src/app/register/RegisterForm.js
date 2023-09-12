@@ -33,7 +33,7 @@ const RegisterForm = () => {
         </button>
         <p>
           Already have an account?{' '}
-          <Link href="/Login">
+          <Link className="login" href="/Login">
             Login here
           </Link>
         </p>

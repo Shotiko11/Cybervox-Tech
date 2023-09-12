@@ -1,22 +1,36 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import "./loginForm.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic here (e.g., API call)
+
+    if (!email || !password) {
+      setError("Fill every input");
+      return;
+    }
+
+    setError("");
+
     console.log("Email:", email);
     console.log("Password:", password);
+
+    // Assuming successful login, redirect to the home page
+    router.push("/");
   };
 
   return (
     <div className="container">
       <form className="loginForm" onSubmit={handleSubmit}>
         <h2>Login</h2>
+        {error && <p className="error">{error}</p>}
         <div className="formGroup">
           <label htmlFor="email">Email</label>
           <input
@@ -41,7 +55,10 @@ const Login = () => {
           Login
         </button>
         <p>
-          {"Don't"} have an account? <Link className="register" href="/Register">Register here</Link>
+          {"Don't"} have an account?{" "}
+          <Link className="register" href="/Register">
+            Register here
+          </Link>
         </p>
       </form>
     </div>

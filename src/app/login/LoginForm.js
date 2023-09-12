@@ -1,7 +1,6 @@
-// pages/Login.js
-
 import React, { useState } from "react";
-import styles from "../styles/Login.module.css"; // Import your CSS module
+import Link from "next/link";
+import "./loginForm.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -15,10 +14,10 @@ const Login = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <form className={styles.loginForm} onSubmit={handleSubmit}>
+    <div className="container">
+      <form className="loginForm" onSubmit={handleSubmit}>
         <h2>Login</h2>
-        <div className={styles.formGroup}>
+        <div className="formGroup">
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -28,7 +27,7 @@ const Login = () => {
             required
           />
         </div>
-        <div className={styles.formGroup}>
+        <div className="formGroup">
           <label htmlFor="password">Password</label>
           <input
             type="password"
@@ -38,9 +37,12 @@ const Login = () => {
             required
           />
         </div>
-        <button type="submit" className={styles.loginButton}>
+        <button type="submit" className="loginButton">
           Login
         </button>
+        <p>
+          {"Don't"} have an account? <Link href="/Register">Register here</Link>
+        </p>
       </form>
     </div>
   );

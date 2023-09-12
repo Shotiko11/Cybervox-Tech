@@ -83,3 +83,12 @@ const socialMedia = (
     </div>
   </div>
 );
+
+export {
+    sectionHeading,
+    contactInfo,
+    contactForm,
+    locationMap,
+    businessHours,
+    socialMedia,
+}

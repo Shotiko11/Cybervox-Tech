@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import React from 'react';
+import React from "react";
 import "./header.css";
 import Link from "next/link";
 
@@ -9,7 +9,9 @@ const Header = () => {
     <div>
       <header className="header">
         <nav className="nav">
-          <div className="companyName" href="/">Cybervox Tech</div>
+          <div className="companyName" href="/">
+            Cybervox Tech
+          </div>
           <ul className="menu">
             <li>
               <Link className="liclass" href="/">
@@ -29,6 +31,11 @@ const Header = () => {
             <li>
               <Link className="liclass" href="/Contact">
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link className="login-link" href="/Login">
+                Login
               </Link>
             </li>
           </ul>

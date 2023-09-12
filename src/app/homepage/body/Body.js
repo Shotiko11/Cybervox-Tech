@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "./body.css";
 import Image from "next/image";
 
 const Body = () => {
+
+  const [p, setp] = useState(false)
+
+  const handleClick = () => {
+    setp(!p)
+  }
+
+  const myNum = "+(995) 574-312-441"
+
   return (
     <div>
       <section className="hero">
         <div className="hero-content">
           <h1>Welcome to Cybervox Tech</h1>
           <p>Your trusted technology partner</p>
-          <a href="#contact" className="cta-button">
+          <a href="#contact" className="cta-button" onClick={handleClick}>
             Contact Us
           </a>
+          {p ? <p style={{paddingTop:"10px", fontSize:"20px"}}>{myNum}</p> : null}
         </div>
       </section>
       <section className="services">

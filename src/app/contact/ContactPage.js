@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contactPage.css";
 import {
-  sectionHeading,
-  contactInfo,
-  contactForm,
-  locationMap,
-  businessHours,
-  socialMedia,
+  SectionHeading,
+  ContactInfo,
+  ContactForm,
+  LocationMap,
+  BusinessHours,
+  SocialMedia,
 } from "./Element";
 import useContactPageLogic from "./Functions";
 
@@ -23,18 +23,18 @@ const ContactPage = () => {
   return (
     <div className="contact-section">
       <div className="contact-container">
-        {sectionHeading}
-        {contactInfo}
-        {contactForm({
-          message, // Pass message as a prop
-          showEmptyMessage,
-          countdown,
-          handleClick,
-          setMessage,
-        })}
-        {locationMap}
-        {businessHours}
-        {socialMedia}
+        <SectionHeading />
+        <ContactInfo />
+        <ContactForm
+          message={message} // Pass message as a prop
+          showEmptyMessage={showEmptyMessage}
+          countdown={countdown}
+          handleClick={handleClick}
+          setMessage={setMessage}
+        />
+        <LocationMap />
+        <BusinessHours />
+        <SocialMedia />
       </div>
     </div>
   );

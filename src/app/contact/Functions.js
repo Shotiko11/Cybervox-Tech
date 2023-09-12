@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import "./contactPage.css";
-import { sectionHeading, contactInfo, contactForm, locationMap, businessHours, socialMedia } from "./Element";
+// ContactPageLogic.js
 
-const ContactPage = () => {
+import { useState, useEffect } from "react";
+
+function useContactPageLogic() {
   const [text, setText] = useState(false);
   const [message, setMessage] = useState("");
   const [showEmptyMessage, setShowEmptyMessage] = useState(false);
@@ -35,18 +35,14 @@ const ContactPage = () => {
     }
   };
 
-  return (
-    <div className="contact-section">
-      <div className="contact-container">
-        {sectionHeading}
-        {contactInfo}
-        {contactForm}
-        {locationMap}
-        {businessHours}
-        {socialMedia}
-      </div>
-    </div>
-  );
-};
+  return {
+    text,
+    message,
+    showEmptyMessage,
+    countdown,
+    handleClick,
+    setMessage
+  };
+}
 
-export default ContactPage;
+export default useContactPageLogic;

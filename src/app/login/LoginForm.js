@@ -7,7 +7,6 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const router = useRouter();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,7 +21,7 @@ const Login = () => {
     console.log("Email:", email);
     console.log("Password:", password);
 
-    router.push("/");
+    props.setLogin(false)
   };
 
   return (

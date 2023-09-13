@@ -3,10 +3,12 @@
 import React, { useState } from "react";
 import "./header.css";
 import Link from "next/link";
+import Login from "@/pages/Login";
 
 const Header = () => {
 
   const [login, setLogin] = useState(true);
+  const [visible, setVisible] = useState(false);
 
   return (
     <div>
@@ -37,7 +39,8 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link className="liclalss" href="/Login" login={login} setLogin={setLogin} >Login</Link>
+              <Link className="liclalss" href="/Login" >Login</Link>
+              {visible ? <Login login={login} setLogin={setLogin} /> : null}
             </li>
           </ul>
         </nav>

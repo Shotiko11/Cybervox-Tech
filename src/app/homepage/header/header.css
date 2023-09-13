@@ -90,3 +90,7 @@ body {
 .login-link:hover {
   color: #333;
 }
+
+.display {
+  display: none;
+}

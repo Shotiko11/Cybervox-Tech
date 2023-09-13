@@ -7,8 +7,9 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const router = useRouter(); // Get the router object
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!email || !password) {
@@ -16,12 +17,15 @@ const Login = () => {
       return;
     }
 
-    setError("");
+    // Assuming your login logic is asynchronous (e.g., calling an API)
+    try {
+      // Perform your login logic here
 
-    console.log("Email:", email);
-    console.log("Password:", password);
-
-    props.setLogin(false)
+      // If login is successful, navigate to the "/" page
+      router.push("/");
+    } catch (error) {
+      setError("Login failed. Please check your credentials.");
+    }
   };
 
   return (

@@ -22,7 +22,6 @@ const Login = () => {
     console.log("Email:", email);
     console.log("Password:", password);
 
-    // Assuming successful login, redirect to the home page
     router.push("/");
   };
 

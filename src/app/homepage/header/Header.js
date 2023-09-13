@@ -37,7 +37,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              {login ? <Link className="liclalss" href="/Login" login={login} setLogin={setLogin} >Login</Link> : null}
+              <Link className="liclalss" href="/Login" login={login} setLogin={setLogin} >Login</Link>
             </li>
           </ul>
         </nav>

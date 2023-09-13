@@ -5,6 +5,9 @@ import "./header.css";
 import Link from "next/link";
 
 const Header = () => {
+
+  const [login, setLogin] = useState(false);
+
   return (
     <div>
       <header className="header">
@@ -34,9 +37,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              {}<Link className="liclalss" href="/Login">
-                Login
-              </Link>
+              {login ? <Link className="liclalss" href="/Login" login={login} setLogin={setLogin} >Login</Link> : null}
             </li>
           </ul>
         </nav>

@@ -1,7 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Elements = () => {
+const Elements = ({ login, setLogin, visible, setVisible }) => {
+
+    const handleClickProp = () => {
+        setLogin(false);
+        setVisible(false);
+    }
+
   return (
     <div>
       <header className="header">
@@ -31,7 +37,7 @@ const Elements = () => {
               </Link>
             </li>
             <li>
-              <Link className="liclalss" href="/Login" >Login</Link>
+              {visible ? <Link className="liclalss" href="/" onClick={handleClickProp}>Login</Link> : <p>You are logged-in</p>}
             </li>
           </ul>
         </nav>
@@ -40,4 +46,4 @@ const Elements = () => {
   )
 }
 
-export default Elements
+export default Elements;

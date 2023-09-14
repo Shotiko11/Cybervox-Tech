@@ -67,3 +67,19 @@ export const info = {
       "In summary, Naina, our Marketing Manager, is the driving force behind our marketing success. Her expertise and dedication to building strong customer relationships contribute to our continued growth and success in reaching and engaging our audience.",
   },
 };
+
+export const text = {
+  overview: {
+    overviewOne:
+      "Welcome to Cybervox Tech, your trusted partner in the world of technology and innovation. Founded in 2023, we have been on a journey to transform businesses and empower individuals through cutting-edge technology solutions. Our mission is to improve techindustry.",
+    overviewTwo:
+      "Welcome to Cybervox Tech, your esteemed companion in the realm of technology and innovation. Since our inception in the year 2023, we have embarked on a remarkable odyssey dedicated to reshaping businesses and empowering individuals with state-of-the-art technological solutions. Our overarching mission revolves around the enhancement and advancement of the technology industry. At Cybervox Tech, we are unwaveringly committed to pioneering breakthroughs, fostering innovation, and driving transformative change in the ever-evolving landscape of technology. With a deep-rooted passion for progress and an unyielding dedication to excellence, we stand as your steadfast ally on the path to a brighter technological future.",
+  },
+
+  history: {
+    historyOne: "Since our inception in 2023, we've been dedicated to innovation and excellence. Over the years, we've achieved numerous milestones, launching groundbreaking products, expanding our global reach, and receiving industry recognition. Our commitment to innovation and customer-centricity has driven our success and positioned us as a leader in the technology industry.",
+
+    historyTwo: "Since our inception in the illustrious year of 2023, Cybervox Tech has held an unwavering commitment to the twin pillars of innovation and excellence. These core principles have been the guiding stars of our journey, propelling us through the years with a relentless drive to push boundaries and surpass expectations. As we reflect on our trajectory, it is clear that we have not merely flourished but thrived. Our journey has been marked by a succession of momentous milestones, each a testament to our unyielding determination. We have ventured into uncharted territories, introducing groundbreaking products that have not only disrupted industries but also redefined the very essence of technological advancement. Our global footprint has expanded exponentially, extending our influence and capabilities to the farthest corners of the globe. This global reach has enabled us to touch the lives of individuals and businesses in diverse cultures and communities, fostering innovation and growth on a global scale. Perhaps one of our proudest achievements is the recognition we have received from the technology industry itself. Awards, accolades, and industry recognition have become a consistent companion on our journey. These honors not only validate our commitment but also inspire us to continually raise the bar and set new benchmarks in the technology sector. At Cybervox Tech, we believe in experience, our knowledge, and your business success. These values drive us to our main goal."
+  }
+};
+

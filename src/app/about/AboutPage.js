@@ -1,43 +1,26 @@
 import Image from "next/image";
 import "./aboutPage.css"; // Import your CSS file
 import React, { useState } from "react";
-import { info } from "./Infos";
+import { info, text } from "./Infos";
 
 const AboutPage = () => {
   const [Lasha, setLasha] = useState(false);
   const [nika, setNika] = useState(false);
   const [ani, setAni] = useState(false);
   const [naina, setNaina] = useState(false);
+  const [overview, setOverview] = useState(true);
+  const [history, setHistory] = useState(true);
 
   return (
     <div className="about-section">
       <div className="about-container">
-        <h2 className="section-heading center-team">Company Overview</h2>
-        <p className="company-description">
-          Welcome to Cybervox Tech, your trusted partner in the world of
-          technology and innovation. Founded in 2023, {"we've"} been on a
-          journey to transform businesses and empower individuals through
-          cutting-edge technology solutions. Our mission is to improve tech
-          industry.
-        </p>
-        <p className="company-description">
-          At Cybervox Tech, we believe in experience, our knowledge, and your
-          business success. These values drive us to our main goal.
-        </p>
+        <h2 className="section-heading center-team" onClick={() =>{ setOverview(!overview) }}>Company Overview</h2>
+        {overview ? <p className="company-description">{text.overview.overviewOne}</p> : <p className="company-description">{text.overview.overviewTwo}</p>}
       </div>
       <div className="history-side">
         <div className="about-container">
-          <h2 className="section-heading center-team">Our History</h2>
-          <p className="company-description">
-            Since our inception in 2023, {"we've"} been dedicated to innovation
-            and excellence. Over the years, {"we've"} achieved numerous
-            milestones, launching groundbreaking products, expanding our global
-            reach, and receiving industry recognition.
-          </p>
-          <p className="company-description">
-            Our commitment to innovation and customer-centricity has driven our
-            success and positioned us as a leader in the technology industry.
-          </p>
+          <h2 className="section-heading center-team" onClick={() => { setHistory(!history) }}>Our History</h2>
+          {history ? <p className="company-description">{text.history.historyOne}</p> : <p className="company-description">{text.history.historyTwo}</p>}
         </div>
       </div>
       <div className="team-section">

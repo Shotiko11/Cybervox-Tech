@@ -23,6 +23,7 @@ body {
 
 .section-heading.center-team {
   text-align: center;
+  cursor: pointer;
 }
 
 .company-description {

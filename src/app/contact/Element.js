@@ -74,7 +74,7 @@ const ContactForm = () => {
 };
 
 const SectionHeading = () => (
-  <h2 className="section-heading">Contact Us</h2>
+  <h2 className="section-heading">Contact Us Here</h2>
 );
 
 const LocationMap = () => (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./contactPage.css";
 
 const ContactInfo = () => (
@@ -30,9 +30,25 @@ const ContactForm = () => {
     } else {
       setText(true);
       setShowEmptyMessage(false);
-      setCountdown(5);
+  
+      // Start the countdown
+      const countdownInterval = setInterval(() => {
+        setCountdown((prevCountdown) => prevCountdown - 1);
+      }, 1000);
+  
+      // Clear the countdown and success message after 5 seconds
+      setTimeout(() => {
+        clearInterval(countdownInterval);
+        setText(false);
+        setCountdown(5);
+      }, 5000);
     }
   };
+  
+  useEffect(() => {
+    setCountdown(5);
+    setText(false);
+  }, [message]);
 
   return (
     <div className="contact-form">

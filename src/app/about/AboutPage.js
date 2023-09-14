@@ -44,7 +44,11 @@ const AboutPage = () => {
   ];
 
   const handleMemberClick = (index) => {
-    setSelectedMember(index);
+    if (selectedMember === index) {
+      setSelectedMember(null);
+    } else {
+      setSelectedMember(index);
+    }
   };
 
   return (

@@ -54,7 +54,6 @@ const ContactForm = () => {
     <div className="contact-form">
       <input type="text" placeholder="Your Name" />
       <input type="email" placeholder="Your Email" />
-      <div style={{display:"block"}}>
         <textarea
         placeholder="Your Message"
         className="yourmessage"
@@ -62,7 +61,6 @@ const ContactForm = () => {
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>
       <button onClick={() => handleClick()}>Send Message</button>
-      </div>
       {showEmptyMessage && (
         <p style={{ color: "red" }}>Your message must not be empty </p>
       )}

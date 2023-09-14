@@ -154,6 +154,7 @@ const AboutPage = () => {
         </div>
         {Lasha ? (
           <div className="custom-container">
+            <h1 style={{textAlign:"center"}}>1. Lasha</h1>
             <div className="custom-child-div">{info.first.first}</div>{" "}
             <div className="custom-child-div">{info.first.second}</div>{" "}
             <div className="custom-child-div">{info.first.third}</div>{" "}

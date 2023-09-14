@@ -5,15 +5,15 @@ const ContactInfo = () => (
   <div className="contact-info">
     <div className="contact-item">
       <p className="contact-label">Address:</p>
-      <p className="contact-value">1234 Elm Street, Cityville, ST 12345</p>
+      <p className="contact-value">ㅤ1234 Elm Street, Cityville, ST 12345</p>
     </div>
     <div className="contact-item">
       <p className="contact-label">Phone:</p>
-      <p className="contact-value">(555) 123-4567</p>
+      <p className="contact-value">ㅤ(555) 123-4567</p>
     </div>
     <div className="contact-item">
       <p className="contact-label">Email:</p>
-      <p className="contact-value">info@example.com</p>
+      <p className="contact-value">ㅤcyber@welcome.com</p>
     </div>
   </div>
 );

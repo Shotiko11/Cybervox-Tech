@@ -57,8 +57,6 @@ const ContactForm = () => {
   );
 };
 
-// Repeat the same pattern for other components
-
 const SectionHeading = () => (
   <h2 className="section-heading">Contact Us</h2>
 );

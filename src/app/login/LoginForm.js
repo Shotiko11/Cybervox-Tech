@@ -7,7 +7,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const router = useRouter(); // Get the router object
+  const router = useRouter(); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -17,11 +17,7 @@ const Login = () => {
       return;
     }
 
-    // Assuming your login logic is asynchronous (e.g., calling an API)
     try {
-      // Perform your login logic here
-
-      // If login is successful, navigate to the "/" page
       router.push("/");
     } catch (error) {
       setError("Login failed. Please check your credentials.");

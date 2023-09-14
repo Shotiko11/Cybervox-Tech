@@ -4,7 +4,7 @@ import "./contactPage.css";
 const ContactInfo = () => (
   <div className="contact-info">
     <div className="contact-item">
-      <p className="contact-label" style={{fontWeight:"bold"}}>Address:</p>
+      <p className="contact-label">Address:</p>
       <p className="contact-value">ㅤTbilisi, Chavchavadze Street N54</p>
     </div>
     <div className="contact-item">
@@ -54,13 +54,15 @@ const ContactForm = () => {
     <div className="contact-form">
       <input type="text" placeholder="Your Name" />
       <input type="email" placeholder="Your Email" />
-      <textarea
+      <div style={{display:"block"}}>
+        <textarea
         placeholder="Your Message"
         className="yourmessage"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>
       <button onClick={() => handleClick()}>Send Message</button>
+      </div>
       {showEmptyMessage && (
         <p style={{ color: "red" }}>Your message must not be empty </p>
       )}

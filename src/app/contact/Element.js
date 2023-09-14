@@ -4,12 +4,12 @@ import "./contactPage.css";
 const ContactInfo = () => (
   <div className="contact-info">
     <div className="contact-item">
-      <p className="contact-label">Address:</p>
-      <p className="contact-value">ㅤ1234 Elm Street, Cityville, ST 12345</p>
+      <p className="contact-label" style={{fontWeight:"bold"}}>Address:</p>
+      <p className="contact-value">ㅤTbilisi, Chavchavadze Street N54</p>
     </div>
     <div className="contact-item">
       <p className="contact-label">Phone:</p>
-      <p className="contact-value">ㅤ(555) 123-4567</p>
+      <p className="contact-value">ㅤ{"+ (995) 555455986"}</p>
     </div>
     <div className="contact-item">
       <p className="contact-label">Email:</p>

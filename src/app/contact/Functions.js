@@ -1,5 +1,3 @@
-// ContactPageLogic.js
-
 import { useState, useEffect } from "react";
 
 function useContactPageLogic() {

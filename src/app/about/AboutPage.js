@@ -106,6 +106,7 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
+          <p></p>
         </div>
       </div>
     </div>

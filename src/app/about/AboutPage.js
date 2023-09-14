@@ -154,7 +154,7 @@ const AboutPage = () => {
         </div>
         {Lasha ? (
           <div className="custom-container">
-            <h1 style={{textAlign:"center"}}>1. Lasha</h1>
+            <h1 style={{ textAlign: "center" }}>1. Lasha</h1>
             <div className="custom-child-div">{info.first.first}</div>{" "}
             <div className="custom-child-div">{info.first.second}</div>{" "}
             <div className="custom-child-div">{info.first.third}</div>{" "}
@@ -164,6 +164,7 @@ const AboutPage = () => {
         ) : null}
         {nika ? (
           <div className="custom-container">
+            <h1 style={{ textAlign: "center" }}>2. Nika</h1>
             <div className="custom-child-div">{info.second.first}</div>{" "}
             <div className="custom-child-div">{info.second.second}</div>{" "}
             <div className="custom-child-div">{info.second.third}</div>{" "}
@@ -173,6 +174,7 @@ const AboutPage = () => {
         ) : null}
         {ani ? (
           <div className="custom-container">
+            <h1 style={{ textAlign: "center" }}>3. Ani</h1>
             <div className="custom-child-div">{info.third.first}</div>{" "}
             <div className="custom-child-div">{info.third.second}</div>{" "}
             <div className="custom-child-div">{info.third.third}</div>{" "}
@@ -180,13 +182,16 @@ const AboutPage = () => {
             <div className="custom-child-div">{info.third.fifth}</div>{" "}
           </div>
         ) : null}
-        {naina ? <div className="custom-container">
+        {naina ? (
+          <div className="custom-container">
+            <h1 style={{ textAlign: "center" }}>4. Naina</h1>
             <div className="custom-child-div">{info.fourth.first}</div>{" "}
             <div className="custom-child-div">{info.fourth.second}</div>{" "}
             <div className="custom-child-div">{info.fourth.third}</div>{" "}
             <div className="custom-child-div">{info.fourth.fourth}</div>{" "}
             <div className="custom-child-div">{info.fourth.fifth}</div>{" "}
-          </div> : null}
+          </div>
+        ) : null}
       </div>
     </div>
   );

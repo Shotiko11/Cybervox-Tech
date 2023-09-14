@@ -13,7 +13,7 @@ import useContactPageLogic from "./Functions";
 const ContactPage = () => {
   const {
     text,
-    message, // Make sure to include message in the destructuring
+    message,
     showEmptyMessage,
     countdown,
     handleClick,
@@ -26,7 +26,7 @@ const ContactPage = () => {
         <SectionHeading />
         <ContactInfo />
         <ContactForm
-          message={message} // Pass message as a prop
+          message={message} 
           showEmptyMessage={showEmptyMessage}
           countdown={countdown}
           handleClick={handleClick}

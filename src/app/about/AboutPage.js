@@ -36,7 +36,8 @@ const AboutPage = () => {
       </div>
       <div className="team-section">
         <div className="about-container">
-          <h2 className="section-heading center-team">Introduce Our Team</h2>
+          <h2 className="section-heading center-team" style={{fontSize:"34px"}}>Introduce Our Team</h2>
+          <p className="section-heading center-team" style={{fontSize:"18px"}}>For More Information About Our Team, Click On Their Names</p>
           <div className="team-members">
             {/* Team Member 1 */}
             <div className="team-member">
@@ -106,7 +107,7 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
-          <p></p>
+          
         </div>
       </div>
     </div>

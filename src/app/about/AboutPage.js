@@ -1,13 +1,13 @@
 import Image from "next/image";
 import "./aboutPage.css"; // Import your CSS file
 import React, { useState } from "react";
+import { info } from "./Infos";
 
 const AboutPage = () => {
-
   const [Lasha, setLasha] = useState(false);
   const [nika, setNika] = useState(false);
   const [ani, setAni] = useState(false);
-  const [naina, setnaina] = useState(false);
+  const [naina, setNaina] = useState(false);
 
   return (
     <div className="about-section">
@@ -42,8 +42,18 @@ const AboutPage = () => {
       </div>
       <div className="team-section">
         <div className="about-container">
-          <h2 className="section-heading center-team" style={{fontSize:"34px"}}>Introduce Our Team</h2>
-          <p className="section-heading center-team" style={{fontSize:"18px"}}>For More Information About Our Team, Click On Their Names</p>
+          <h2
+            className="section-heading center-team"
+            style={{ fontSize: "34px" }}
+          >
+            Introduce Our Team
+          </h2>
+          <p
+            className="section-heading center-team"
+            style={{ fontSize: "18px" }}
+          >
+            For More Information About Our Team, Click On Their Names
+          </p>
           <div className="team-members">
             {/* Team Member 1 */}
             <div className="team-member">
@@ -54,7 +64,14 @@ const AboutPage = () => {
                 width={200}
                 height={160}
               />
-              <h3 className="team-member-name">Lasha</h3>
+              <h3
+                className="team-member-name"
+                onClick={() => {
+                  setLasha(!Lasha);
+                }}
+              >
+                Lasha
+              </h3>
               <p className="team-member-title">CEO</p>
               <p className="team-member-description">
                 Lasha is a visionary leader with a passion for innovation and
@@ -71,7 +88,14 @@ const AboutPage = () => {
                 width={200}
                 height={160}
               />
-              <h3 className="team-member-name">Nika</h3>
+              <h3
+                className="team-member-name"
+                onClick={() => {
+                  setNika(!nika);
+                }}
+              >
+                Nika
+              </h3>
               <p className="team-member-title">CTO</p>
               <p className="team-member-description">
                 Nika is our technical genius who drives our cutting-edge
@@ -88,11 +112,18 @@ const AboutPage = () => {
                 width={200}
                 height={160}
               />
-              <h3 className="team-member-name">Ani</h3>
+              <h3
+                className="team-member-name"
+                onClick={() => {
+                  setAni(!ani);
+                }}
+              >
+                Ani
+              </h3>
               <p className="team-member-title">Lead Designer</p>
               <p className="team-member-description">
-                {"Ani's"} creativity knows no bounds. She crafts stunning designs
-                that leave a lasting impression.
+                {"Ani's"} creativity knows no bounds. She crafts stunning
+                designs that leave a lasting impression.
               </p>
             </div>
 
@@ -105,7 +136,14 @@ const AboutPage = () => {
                 width={200}
                 height={160}
               />
-              <h3 className="team-member-name">Naina</h3>
+              <h3
+                className="team-member-name"
+                onClick={() => {
+                  setNaina(!naina);
+                }}
+              >
+                Naina
+              </h3>
               <p className="team-member-title">Marketing Manager</p>
               <p className="team-member-description">
                 Naina is our marketing guru. She knows how to reach our audience
@@ -113,11 +151,41 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
-          {Lasha ? <div></div> : null}
-          {nika ? <div></div> : null}
-          {ani ? <div></div> : null}
-          {naina ? <div></div> : null}
         </div>
+        {Lasha ? (
+          <div className="custom-container">
+            <div className="custom-child-div">{info.first.first}</div>{" "}
+            <div className="custom-child-div">{info.first.second}</div>{" "}
+            <div className="custom-child-div">{info.first.third}</div>{" "}
+            <div className="custom-child-div">{info.first.fourth}</div>{" "}
+            <div className="custom-child-div">{info.first.fifth}</div>{" "}
+          </div>
+        ) : null}
+        {nika ? (
+          <div className="custom-container">
+            <div className="custom-child-div">{info.second.first}</div>{" "}
+            <div className="custom-child-div">{info.second.second}</div>{" "}
+            <div className="custom-child-div">{info.second.third}</div>{" "}
+            <div className="custom-child-div">{info.second.fourth}</div>{" "}
+            <div className="custom-child-div">{info.second.fifth}</div>{" "}
+          </div>
+        ) : null}
+        {ani ? (
+          <div className="custom-container">
+            <div className="custom-child-div">{info.third.first}</div>{" "}
+            <div className="custom-child-div">{info.third.second}</div>{" "}
+            <div className="custom-child-div">{info.third.third}</div>{" "}
+            <div className="custom-child-div">{info.third.fourth}</div>{" "}
+            <div className="custom-child-div">{info.third.fifth}</div>{" "}
+          </div>
+        ) : null}
+        {naina ? <div className="custom-container">
+            <div className="custom-child-div">{info.fourth.first}</div>{" "}
+            <div className="custom-child-div">{info.fourth.second}</div>{" "}
+            <div className="custom-child-div">{info.fourth.third}</div>{" "}
+            <div className="custom-child-div">{info.fourth.fourth}</div>{" "}
+            <div className="custom-child-div">{info.fourth.fifth}</div>{" "}
+          </div> : null}
       </div>
     </div>
   );

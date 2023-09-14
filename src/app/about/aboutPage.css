@@ -1,5 +1,7 @@
 /* aboutPage.css */
-
+body {
+  margin: 0;
+}
 /* Styles for the entire About Page */
 .about-section {
   background-color: #f0f0f0;
@@ -87,6 +89,7 @@
   font-weight: bold;
   color: #333;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 /* Team member title styles */
@@ -101,4 +104,21 @@
   font-size: 14px;
   color: #777;
   line-height: 1.4;
+}
+
+.custom-container {
+  max-width: 800px; /* Set the maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  background-color: #f0f0f0; /* White background color */
+  border-radius: 10px; /* Rounded corners for the container */
+  padding: 20px; /* Add padding inside the container */
+}
+
+/* Adjustments for custom-child-div */
+.custom-child-div {
+  margin-top: 10px; /* Add spacing between child divs */
+  padding: 15px; /* Increase padding for spacing within each child div */
+  background-color: #f2f2f2; /* Background color for child divs */
+  border: 1px solid #ccc; /* Add a border around child divs */
+  border-radius: 5px; /* Rounded corners for child divs */
 }

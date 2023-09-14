@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./body.css";
-import Image from "next/image";
 
 const Body = () => {
 

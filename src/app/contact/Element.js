@@ -9,7 +9,7 @@ const ContactInfo = () => (
     </div>
     <div className="contact-item">
       <p className="contact-label">Phone:</p>
-      <p className="contact-value">ㅤ{"+ (995) 555455986"}</p>
+      <p className="contact-value">ㅤ{"+(995) 555455986"}</p>
     </div>
     <div className="contact-item">
       <p className="contact-label">Email:</p>

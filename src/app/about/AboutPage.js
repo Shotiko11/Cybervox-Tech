@@ -1,8 +1,14 @@
 import Image from "next/image";
 import "./aboutPage.css"; // Import your CSS file
-import React from "react";
+import React, { useState } from "react";
 
 const AboutPage = () => {
+
+  const [Lasha, setLasha] = useState(false);
+  const [nika, setNika] = useState(false);
+  const [ani, setAni] = useState(false);
+  const [naina, setnaina] = useState(false);
+
   return (
     <div className="about-section">
       <div className="about-container">
@@ -107,7 +113,10 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
-          
+          {Lasha ? <div></div> : null}
+          {nika ? <div></div> : null}
+          {ani ? <div></div> : null}
+          {naina ? <div></div> : null}
         </div>
       </div>
     </div>

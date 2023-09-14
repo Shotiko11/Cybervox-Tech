@@ -1,33 +1,30 @@
-/* aboutPage.css */
 body {
   margin: 0;
 }
-/* Styles for the entire About Page */
+
 .about-section {
   background-color: #f0f0f0;
   padding: 120px 0 0 0;
 }
 
-/* Container styles for the content sections */
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Section heading styles */
 .section-heading {
   font-size: 28px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
+  padding: 0 0 15px 0;
 }
 
 .section-heading.center-team {
   text-align: center;
 }
 
-/* Company description styles */
 .company-description {
   font-size: 18px;
   color: #666;
@@ -35,46 +32,39 @@ body {
   margin-bottom: 20px;
 }
 
-/* History section styles */
 .history-side {
   background-color: #f0f0f0;
   padding: 40px 0;
 }
 
-/* Team section styles */
 .team-section {
   background-color: #f0f0f0;
   padding: 40px 0;
 }
 
-/* Team members container styles */
 .team-members {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  padding: 0 0 30px 0;
 }
 
-/* Individual team member card styles */
-/* Individual team member card styles */
 .team-member {
   flex: 1;
-  max-width: calc(25% - 20px); /* 25% width with a small gap between */
+  max-width: calc(25% - 20px);
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  margin-right: 20px; /* Add a small gap between team members */
+  margin-right: 20px;
 }
 
-/* Adjust margin-right for the last team member in each row */
 .team-member:nth-child(4n) {
   margin-right: 0;
 }
 
-
-/* Team member photo styles */
 .team-member-photo {
   width: 160px;
   height: 160px;
@@ -83,7 +73,6 @@ body {
   object-fit: cover;
 }
 
-/* Team member name styles */
 .team-member-name {
   font-size: 20px;
   font-weight: bold;
@@ -92,14 +81,12 @@ body {
   cursor: pointer;
 }
 
-/* Team member title styles */
 .team-member-title {
   font-size: 16px;
   color: #666;
   margin-bottom: 10px;
 }
 
-/* Team member description styles */
 .team-member-description {
   font-size: 14px;
   color: #777;
@@ -107,18 +94,17 @@ body {
 }
 
 .custom-container {
-  max-width: 800px; /* Set the maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
-  background-color: #f0f0f0; /* White background color */
-  border-radius: 10px; /* Rounded corners for the container */
-  padding: 20px; /* Add padding inside the container */
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-/* Adjustments for custom-child-div */
 .custom-child-div {
-  margin-top: 10px; /* Add spacing between child divs */
-  padding: 15px; /* Increase padding for spacing within each child div */
-  background-color: #f2f2f2; /* Background color for child divs */
-  border: 1px solid #ccc; /* Add a border around child divs */
-  border-radius: 5px; /* Rounded corners for child divs */
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }

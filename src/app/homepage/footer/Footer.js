@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-content">
             <div className="contact-info">
-              <p>Contact Information: +(995) 555-45-59-86</p>
+              <p>Contact Information: {"+(995) 574-312-441"}</p>
               <p>Address: Ilia Chavchavadze Street N45</p>
             </div>
             <div className="footer-links">

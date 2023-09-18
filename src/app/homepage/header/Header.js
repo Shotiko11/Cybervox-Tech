@@ -10,7 +10,7 @@ const Header = () => {
   const [visible, setVisible] = useState(true);
 
   return (
-    <Elements login={login} setLogin={setLogin} visible={visible} setVisible={setVisible} />
+    <Elements setLogin={setLogin} visible={visible} setVisible={setVisible} />
   );
 };
 

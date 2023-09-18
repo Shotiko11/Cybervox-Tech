@@ -37,7 +37,7 @@ const Elements = ({ login, setLogin, visible, setVisible }) => {
               </Link>
             </li>
             <li>
-              {visible ? <Link className="liclalss" href="/" onClick={handleClickProp}>Login</Link> : <p>You are logged-in</p>}
+              {visible ? <Link className="liclalss" href="/" onClick={handleClickProp}>Login</Link> : <p></p>}
             </li>
           </ul>
         </nav>

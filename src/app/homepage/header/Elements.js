@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Elements = ({ login, setLogin, visible, setVisible }) => {
+const Elements = ({ setLogin, visible, setVisible }) => {
 
     const handleClickProp = () => {
         setLogin(false);

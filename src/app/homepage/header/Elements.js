@@ -1,12 +1,11 @@
-import Link from 'next/link'
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 const Elements = ({ setLogin, visible, setVisible }) => {
-
-    const handleClickProp = () => {
-        setLogin(false);
-        setVisible(false);
-    }
+  const handleClickProp = () => {
+    setLogin(false);
+    setVisible(false);
+  };
 
   return (
     <div>
@@ -37,13 +36,16 @@ const Elements = ({ setLogin, visible, setVisible }) => {
               </Link>
             </li>
             <li>
-              {visible ? <Link className="liclalss" href="/" onClick={handleClickProp}>Login</Link> : <p></p>}
+              <Link className="liclass" href="/Contact">
+                States
+              </Link>
+              {/* {visible ? <Link className="liclalss" href="/" onClick={handleClickProp}>Login</Link> : <p></p>} */}
             </li>
           </ul>
         </nav>
       </header>
     </div>
-  )
-}
+  );
+};
 
 export default Elements;

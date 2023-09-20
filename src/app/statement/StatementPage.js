@@ -48,7 +48,7 @@ const StatementPage = () => {
               className="form-select"
               required
             >
-              <option value="">Select Service</option>
+              <option value="">No Service Chosen</option>
               <option value="itSupport">IT Support</option>
               <option value="softwareSupport">Software Support</option>
               <option value="graphicDesign">Graphic Design</option>
@@ -56,7 +56,7 @@ const StatementPage = () => {
           </div>
           <div className="form-group">
             <label htmlFor="budget" className="form-label">
-              Budget:
+              $ Budget:
             </label>
             <input
               type="number"

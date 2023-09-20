@@ -36,7 +36,7 @@ const Elements = ({ setLogin, visible, setVisible }) => {
               </Link>
             </li>
             <li>
-              <Link className="liclass" href="/Contact">
+              <Link className="liclass" href="/Statement">
                 States
               </Link>
               {/* {visible ? <Link className="liclalss" href="/" onClick={handleClickProp}>Login</Link> : <p></p>} */}

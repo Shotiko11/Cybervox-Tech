@@ -7,10 +7,10 @@ const StatementPage = () => {
     <div>
       <Header />
       <div className="page-content">
-        <h1 className="page-title">Get Support for Your Company</h1>
+      <h1 className="page-title">Get Support for Your Company</h1>
         <p className="page-description">
           Fill out the form below to let us know how we can assist you. Whether
-          you need IT support, programming help, or graphic design services,
+          you need IT support, programming help, or graphic design services,<br />
           {"we're"} here to help you achieve your goals.
         </p>
         <form className="request-form">

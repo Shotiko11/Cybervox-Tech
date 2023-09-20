@@ -1,66 +1,80 @@
 /* statementPage.css */
 
-/* Apply styles to the container */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/* Page Container */
+div {
+    text-align: center;
+    margin: 20px;
   }
   
+  /* Header */
   h1 {
-    font-size: 28px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    margin-top: 20px;
     color: #333;
   }
   
+  /* Paragraph */
   p {
     font-size: 16px;
-    margin-bottom: 30px;
+    margin: 10px 0;
     color: #666;
   }
   
-  .form-group {
-    margin-bottom: 20px;
+  /* Form Container */
+  form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
+  /* Form Group */
+  .form-group {
+    margin: 10px;
+    width: 300px;
+    text-align: left;
+  }
+  
+  /* Labels */
   label {
-    display: block;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 5px;
   }
   
+  /* Inputs and Select */
   input[type="text"],
   input[type="number"],
   select,
   textarea {
     width: 100%;
     padding: 10px;
+    margin-top: 5px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 4px;
   }
   
+  /* Select Styles */
   select {
     appearance: none;
-    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
   }
   
-  textarea {
-    resize: vertical;
-    height: 150px;
-  }
-  
-  button {
-    background-color: #0070f3;
-    color: #fff;
+  /* Button */
+  button[type="submit"] {
+    margin-top: 20px;
     padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    transition: background-color 0.3s;
   }
   
-  button:hover {
-    background-color: #0055b3;
+  button[type="submit"]:hover {
+    background-color: #0056b3;
   }
   

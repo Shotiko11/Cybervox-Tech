@@ -6,7 +6,7 @@ const StatementPage = () => {
   return (
     <div>
       <Header />
-      <div>
+      <div className="page-content"> {/* Added class "page-content" */}
         <h1>Get Support for Your Company</h1>
         <p>
           Fill out the form below to let us know how we can assist you. Whether

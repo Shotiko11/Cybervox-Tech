@@ -30,12 +30,12 @@ const ContactForm = () => {
     } else {
       setText(true);
       setShowEmptyMessage(false);
-  
+
       // Start the countdown
       const countdownInterval = setInterval(() => {
         setCountdown((prevCountdown) => prevCountdown - 1);
       }, 1000);
-  
+
       // Clear the countdown and success message after 5 seconds
       setTimeout(() => {
         clearInterval(countdownInterval);
@@ -44,7 +44,7 @@ const ContactForm = () => {
       }, 5000);
     }
   };
-  
+
   useEffect(() => {
     setCountdown(5);
     setText(false);
@@ -54,7 +54,7 @@ const ContactForm = () => {
     <div className="contact-form">
       <input type="text" placeholder="Your Name" />
       <input type="email" placeholder="Your Email" />
-        <textarea
+      <textarea
         placeholder="Your Message"
         className="yourmessage"
         value={message}
